@@ -6,22 +6,22 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-use App\jadwal_matakuliah;
+use App\Jadwal_matakuliah;
 
-class jadwal_matakuliahcontroller extends Controller
+class Jadwal_matakuliahController extends Controller
 {
-    public function awal(){
-    	return "Hello dari jadwal_matakuliahcontroller";
+     public function awal(){
+    	return "Hello dari Jadwal_matakuliahController";
+    }
+    public function tambah(){
+    	return $this->simpan();
+    }
+    public function simpan(){
+    	$jadwal_matakuliah = new Jadwal_matakuliah();
+    	$jadwal_matakuliah->mahasiswa_id = 1;
+    	$jadwal_matakuliah->ruangan_id = 1;
+    	$jadwal_matakuliah->dosen_matakuliah_id = 1;
+    	$jadwal_matakuliah->save();
+    	return "Data Jadwal matakuliah telah disimpan";
 }
-	public function tambah(){
-		return $this->simpan();
-	}
-	public function simpan(){
-		$jadwal_matakuliah = new jadwal_matakuliah();
-		$jadwal_matakuliah->mahasiswa_id = 1;
-		$jadwal_matakuliah->ruangan_id = 1;
-		$jadwal_matakuliah->dosen_matakuliah_id = 1;
-		$jadwal_matakuliah->save();
-			return "Data jadwal matakuliah telah disimpan";
-		}
-	}
+}

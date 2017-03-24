@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-use App\mahasiswa;
+use App\Mahasiswa;
 
-class mahasiswacontroller extends Controller
+class MahasiswaController extends Controller
 {
     public function awal(){
     	return "Hello dari MahasiswaController";
@@ -16,14 +16,13 @@ class mahasiswacontroller extends Controller
     public function tambah(){
     	return $this->simpan();
     }
-    public function simpan()
-    {
+    public function simpan(){
     	$mahasiswa = new Mahasiswa();
-    	$mahasiswa->nama = "Prayogo Nugroho Molet";
-    	$mahasiswa->nim = "1515015073";
-    	$mahasiswa->alamat = "JLn kemakmuran";
+    	$mahasiswa->nama = "Andre Prasetya Rahman";
+    	$mahasiswa->nim = "1515015080";
+    	$mahasiswa->alamat = "Perjuangan 07";
     	$mahasiswa->pengguna_id = 3;
     	$mahasiswa->save();
     	return "Data Mahasiswa dengan Nama {$mahasiswa->nama} telah disimpan";
-	}
+}
 }
