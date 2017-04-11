@@ -80,7 +80,7 @@
 		<nav class="navbar navbar-default navbar-fixed-bottom">
 		<footer class="container">
 			<!-- Please dont delete this -->
-			created by <a href="https://www.facebook.com"><span><i class="fa fa-facebook" style="color:#1da1f2"></i> @PrayogoNugrohoMollet</span></a>
+			created by <a href="https://www.instagram.com/PrayogoNM"><span><i class="fa fa-instagram" style="color:#1da1f2"></i> @PrayogoNM</span></a>
 			<!--/ Please dont delete this -->
 		</footer>	
 		</nav>
