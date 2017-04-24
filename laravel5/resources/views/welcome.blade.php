@@ -38,8 +38,8 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">PrayogoNM</div>
+                <div class="title">FKTI</div>
             </div>
         </div>
     </body>
-</html>
+</html> 
